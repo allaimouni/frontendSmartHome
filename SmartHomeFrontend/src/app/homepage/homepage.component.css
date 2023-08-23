@@ -1,0 +1,50 @@
+.box-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  width: 20%px; 
+  height: 10%px; 
+  border: 1px solid #000000;
+  padding: 20px;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.table {
+  margin-right: 20px;
+  border-collapse: collapse;
+  width: calc(70% - 10px); 
+  margin-bottom: 20px;
+}
+
+.caption {
+  font-weight:bolder;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  padding: 16px; 
+  text-align: left;
+  border: 1px solid #0e0e0e;
+}
+
+button.on {
+  background-color: green;
+  color: white;
+}
+
+button.off {
+  background-color: red;
+  color: white;
+}

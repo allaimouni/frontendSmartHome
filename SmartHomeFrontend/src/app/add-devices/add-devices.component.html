@@ -1,0 +1,56 @@
+<div class="container">
+    <form #form1="ngForm" (submit)="submitForm1(form1)">
+      <div class="box">
+        <h3>Add standardConsumer</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ngModel>
+        <label for="consumedElectrecity">consumed:</label>
+        <input type="text" id="consumedElectrecity" name="consumedElectrecity" ngModel>
+        <label for="type">type:</label>
+        <input type="text" id="type" name="type" ngModel>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <form #form4="ngForm" (submit)="submitForm4(form4)">
+        <div class="box">
+          <h3>Add variableConsumer</h3>
+          <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ngModel>
+        <label for="consumedElectrecity">consumed:</label>
+        <input type="text" id="consumedElectrecity" name="consumedElectrecity" ngModel>
+        <label for="type">type:</label>
+        <input type="text" id="type" name="type" ngModel>
+        <button type="submit">Submit</button>
+        </div>
+      </form>
+  
+    <!-- Add Clean Energy Device  -->
+    <form #form2="ngForm" (submit)="submitForm2(form2)">
+      <div class="box">
+        <h3>Add Clean Energy Device</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ngModel>
+        <label for="type">Type:</label>
+        <select id="type" name="type" ngModel required>
+          <option value="turbine">Turbine</option>
+          <option value="solarpanel">Solarpanel</option>
+        </select>
+  
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  <!-- Add Battery  -->
+    <form #form3="ngForm" (submit)="submitForm3(form3)">
+      <div class="box">
+        <h3>Add Battery</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ngModel>
+        <label for="maxCapacity">Capacity:</label>
+        <input type="text" id="maxCapacity" name="maxCapacity" ngModel>
+  
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  

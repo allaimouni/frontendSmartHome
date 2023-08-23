@@ -1,0 +1,65 @@
+.bereich {
+  display:flex ;
+
+  font-size: larger;
+   justify-content: flex-end;
+
+ }
+ .bereich a{
+   margin: 1.5%;
+  
+ }
+   .logo{
+     display: flex;
+
+   }
+   .logo h1 {
+    font-size: 72px;
+    color: #1b3149;
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+  }
+
+ a{
+   color: rgb(17, 26, 60);
+ }
+ img{
+   margin-right: 5%;
+   width: 20%;
+   height: 5%;
+ }
+ body{
+  background: linear-gradient(to bottom, #ffffff, #196d95);
+  
+}
+.table-container {
+  display: flex;
+}
+
+table {
+  border-collapse: collapse;
+  width: 25%;
+  margin-right: 1em;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+
+}
+input[type="text"] {
+  margin-bottom: 10px;
+  width: 200px;
+  padding: 5px;
+}
+.box-container {
+  display: flex;
+  flex-direction: column;
+}

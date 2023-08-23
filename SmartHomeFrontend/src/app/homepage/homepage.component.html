@@ -1,0 +1,104 @@
+<div class="box-container">
+    <h1>SmartMeter</h1>
+    <div class="box">
+      
+      <h3>consumption: {{ SmartMeter[0]?.electricityConsumedWithoutTariff }}</h3>
+    </div>
+
+    <div class="box">
+      <h3>production: {{SmartMeter[0]?.electricityProduced}}</h3>
+    </div>
+    
+
+  </div>
+  <div class="table-container">
+    <table class="table">
+      <caption><b>Battery</b></caption>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>maxcapacity</th>
+          <th>capacity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let battery of Batteries">
+          <td>{{ battery.name }}</td>
+          <td>{{ battery.maxCapacity }}</td>
+          <td>{{ battery.realtimeCapacity }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+      <table class="table">
+        <caption><b> Consumer</b></caption>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>consumedElectrecity</th>
+            <th>type</th>
+            <th>tariff</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let Consumer of Consumers">
+            <td>{{ Consumer.id }}</td>
+            <td>{{ Consumer.name }}</td>
+            <td>{{ Consumer.totalConsume }}</td>
+            <td>{{ Consumer.type }}</td>
+            <td>{{ Consumer.tariff }}</td>
+        </tr>
+        </tbody>
+      </table>
+
+      
+
+      <table class="table">
+        <caption><b>Solar Panel</b></caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>MaxOutput</th>
+            <th>produce</th>
+            <th>sunrise</th>
+            <th>sunset</th>
+            <th>cloud_pct</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let SolarPanel of SolarPanels">
+            <td>{{ SolarPanel.name }}</td>
+            <td>{{ SolarPanel.maxOutput }}</td>
+            <td>{{ SolarPanel.totalProduce }}</td>
+            <td>{{ SolarPanel.sunrise }}</td>
+            <td>{{ SolarPanel.sunset }}</td>
+            <td>{{ SolarPanel.cloud_pct }}</td>
+
+
+          </tr>
+        </tbody>
+      </table>
+      <table class="table">
+        <caption><b>Turbine</b></caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Max-Output</th>
+            <th>produce</th>
+            <th>wind_speed</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let Turbine of Turbines">
+            <td>{{ Turbine.name }}</td>
+            <td>{{ Turbine.maxOutput }}</td>
+            <td>{{ Turbine.wind_speed }}</td>
+            <td>{{ Turbine.totalProduce }}</td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
